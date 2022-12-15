@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1927
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CRM_TERCERO", "CRM_TERCERO\CRM_TERCERO.vbproj", "{FA1FFFCE-BEF5-412D-AED0-5A3719057177}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AD", "AD\AD.vbproj", "{C0988813-E75F-41D2-BD32-133CE7FCD017}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA1FFFCE-BEF5-412D-AED0-5A3719057177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA1FFFCE-BEF5-412D-AED0-5A3719057177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA1FFFCE-BEF5-412D-AED0-5A3719057177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA1FFFCE-BEF5-412D-AED0-5A3719057177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0988813-E75F-41D2-BD32-133CE7FCD017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0988813-E75F-41D2-BD32-133CE7FCD017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0988813-E75F-41D2-BD32-133CE7FCD017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0988813-E75F-41D2-BD32-133CE7FCD017}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91E9BED6-1C99-4C19-91E2-BFC896339B43}
+	EndGlobalSection
+EndGlobal
