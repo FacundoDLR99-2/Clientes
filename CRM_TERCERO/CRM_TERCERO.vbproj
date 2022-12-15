@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{FA1FFFCE-BEF5-412D-AED0-5A3719057177}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CRM_TERCERO</RootNamespace>
+    <AssemblyName>CRM_TERCERO</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44398</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CRM_TERCERO.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CRM_TERCERO.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Librerias\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AD\AD.vbproj">
+      <Project>{c0988813-e75f-41d2-bd32-133ce7fcd017}</Project>
+      <Name>AD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\main\app-dark.css" />
+    <Content Include="assets\css\main\app.css" />
+    <Content Include="assets\css\pages\auth.css" />
+    <Content Include="assets\css\pages\chat.css" />
+    <Content Include="assets\css\pages\datatables.css" />
+    <Content Include="assets\css\pages\dripicons.css" />
+    <Content Include="assets\css\pages\email.css" />
+    <Content Include="assets\css\pages\error.css" />
+    <Content Include="assets\css\pages\filepond.css" />
+    <Content Include="assets\css\pages\fontawesome.css" />
+    <Content Include="assets\css\pages\form-element-select.css" />
+    <Content Include="assets\css\pages\quill.css" />
+    <Content Include="assets\css\pages\rater-js.css" />
+    <Content Include="assets\css\pages\simple-datatables.css" />
+    <Content Include="assets\css\pages\summernote.css" />
+    <Content Include="assets\css\pages\sweetalert2.css" />
+    <Content Include="assets\css\pages\toastify.css" />
+    <Content Include="assets\css\shared\iconly.css" />
+    <Content Include="assets\css\widgets\chat.css" />
+    <Content Include="assets\css\widgets\todo.css" />
+    <Content Include="assets\fonts\Iconly---Bold.svg" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-brands-400.svg" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-regular-400.svg" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-solid-900.svg" />
+    <Content Include="assets\images\4853433.png" />
+    <Content Include="assets\images\bg\4853433.png" />
+    <Content Include="assets\images\bootstrap-icons.svg" />
+    <Content Include="assets\images\faces\1.jpg" />
+    <Content Include="assets\images\faces\2.jpg" />
+    <Content Include="assets\images\faces\3.jpg" />
+    <Content Include="assets\images\faces\4.jpg" />
+    <Content Include="assets\images\faces\5.jpg" />
+    <Content Include="assets\images\faces\6.jpg" />
+    <Content Include="assets\images\faces\7.jpg" />
+    <Content Include="assets\images\faces\8.jpg" />
+    <Content Include="assets\images\logo\favicon.png" />
+    <Content Include="assets\images\logo\favicon.svg" />
+    <Content Include="assets\images\logo\logo.svg" />
+    <Content Include="assets\images\samples\1.png" />
+    <Content Include="assets\images\samples\2.png" />
+    <Content Include="assets\images\samples\3.png" />
+    <Content Include="assets\images\samples\4.png" />
+    <Content Include="assets\images\samples\architecture1.jpg" />
+    <Content Include="assets\images\samples\banana.jpg" />
+    <Content Include="assets\images\samples\bg-mountain.jpg" />
+    <Content Include="assets\images\samples\building.jpg" />
+    <Content Include="assets\images\samples\error-403.svg" />
+    <Content Include="assets\images\samples\error-404.svg" />
+    <Content Include="assets\images\samples\error-500.svg" />
+    <Content Include="assets\images\samples\jump.jpg" />
+    <Content Include="assets\images\samples\motorcycle.jpg" />
+    <Content Include="assets\images\samples\origami.jpg" />
+    <Content Include="assets\images\samples\water.jpg" />
+    <Content Include="assets\images\svg-loaders\audio.svg" />
+    <Content Include="assets\images\svg-loaders\ball-triangle.svg" />
+    <Content Include="assets\images\svg-loaders\bars.svg" />
+    <Content Include="assets\images\svg-loaders\circles.svg" />
+    <Content Include="assets\images\svg-loaders\grid.svg" />
+    <Content Include="assets\images\svg-loaders\hearts.svg" />
+    <Content Include="assets\images\svg-loaders\oval.svg" />
+    <Content Include="assets\images\svg-loaders\puff.svg" />
+    <Content Include="assets\images\svg-loaders\rings.svg" />
+    <Content Include="assets\images\svg-loaders\spinning-circles.svg" />
+    <Content Include="assets\images\svg-loaders\tail-spin.svg" />
+    <Content Include="assets\images\svg-loaders\three-dots.svg" />
+    <Content Include="assets\images\vendor\%40icon\dripicons\dripicons.svg" />
+    <Content Include="assets\images\vendor\rater-js\lib\star_0.svg" />
+    <Content Include="assets\images\vendor\rater-js\lib\star_1.svg" />
+    <Content Include="assets\js\568.js" />
+    <Content Include="assets\js\app.js" />
+    <Content Include="assets\js\app.js.LICENSE.txt" />
+    <Content Include="assets\js\extensions\ckeditor.js" />
+    <Content Include="assets\js\extensions\datatables.js" />
+    <Content Include="assets\js\extensions\datatables.js.LICENSE.txt" />
+    <Content Include="assets\js\extensions\filepond.js" />
+    <Content Include="assets\js\extensions\filepond.js.LICENSE.txt" />
+    <Content Include="assets\js\extensions\form-element-select.js" />
+    <Content Include="assets\js\extensions\form-element-select.js.LICENSE.txt" />
+    <Content Include="assets\js\extensions\quill.js" />
+    <Content Include="assets\js\extensions\quill.js.LICENSE.txt" />
+    <Content Include="assets\js\extensions\rater-js.js" />
+    <Content Include="assets\js\extensions\rater-js.js.LICENSE.txt" />
+    <Content Include="assets\js\extensions\simple-datatables.js" />
+    <Content Include="assets\js\extensions\skins\content\dark\content.css" />
+    <Content Include="assets\js\extensions\skins\content\dark\content.min.css" />
+    <Content Include="assets\js\extensions\skins\content\default\content.css" />
+    <Content Include="assets\js\extensions\skins\content\default\content.min.css" />
+    <Content Include="assets\js\extensions\skins\content\document\content.css" />
+    <Content Include="assets\js\extensions\skins\content\document\content.min.css" />
+    <Content Include="assets\js\extensions\skins\content\writer\content.css" />
+    <Content Include="assets\js\extensions\skins\content\writer\content.min.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide-dark\content.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide-dark\content.inline.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide-dark\content.inline.min.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide-dark\content.min.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide-dark\content.mobile.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide-dark\content.mobile.min.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide-dark\skin.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide-dark\skin.min.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide-dark\skin.mobile.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide-dark\skin.mobile.min.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide-dark\skin.shadowdom.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide-dark\skin.shadowdom.min.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide\content.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide\content.inline.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide\content.inline.min.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide\content.min.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide\content.mobile.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide\content.mobile.min.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide\skin.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide\skin.min.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide\skin.mobile.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide\skin.mobile.min.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide\skin.shadowdom.css" />
+    <Content Include="assets\js\extensions\skins\ui\oxide\skin.shadowdom.min.css" />
+    <Content Include="assets\js\extensions\summernote.js" />
+    <Content Include="assets\js\extensions\summernote.js.LICENSE.txt" />
+    <Content Include="assets\js\extensions\sweetalert2.js" />
+    <Content Include="assets\js\extensions\tinymce.js" />
+    <Content Include="assets\js\extensions\toastify.js" />
+    <Content Include="assets\js\extensions\toastify.js.LICENSE.txt" />
+    <Content Include="assets\js\extensions\ui-apexchart.js" />
+    <Content Include="assets\js\extensions\ui-apexchart.js.LICENSE.txt" />
+    <Content Include="assets\js\extensions\ui-chartjs.js" />
+    <Content Include="assets\js\extensions\ui-chartjs.js.LICENSE.txt" />
+    <Content Include="assets\js\extensions\ui-todolist.js" />
+    <Content Include="assets\js\pages\dashboard.js" />
+    <Content Include="assets\js\pages\dashboard.js.LICENSE.txt" />
+    <Content Include="assets\js\pages\form-editor.js" />
+    <Content Include="assets\js\pages\horizontal-layout.js" />
+    <Content Include="Clientes.aspx" />
+    <Content Include="ContactoTipos.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="Librerias\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="Librerias\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="Librerias\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="Librerias\Microsoft.Practices.Unity.dll" />
+    <Content Include="Librerias\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="Librerias\System.Configuration.dll" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clientes.aspx.designer.vb">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.aspx.vb">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactoTipos.aspx.designer.vb">
+      <DependentUpon>ContactoTipos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactoTipos.aspx.vb">
+      <DependentUpon>ContactoTipos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\fonts\Iconly---Bold.eot" />
+    <Content Include="assets\fonts\Iconly---Bold.ttf" />
+    <Content Include="assets\fonts\Iconly---Bold.woff" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-all-300-normal.woff" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-all-400-normal.woff" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-all-600-normal.woff" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-all-700-normal.woff" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-all-800-normal.woff" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-cyrillic-300-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-cyrillic-400-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-cyrillic-600-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-cyrillic-700-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-cyrillic-800-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-cyrillic-ext-300-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-cyrillic-ext-400-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-cyrillic-ext-600-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-cyrillic-ext-700-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-cyrillic-ext-800-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-latin-300-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-latin-400-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-latin-600-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-latin-700-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-latin-800-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-latin-ext-300-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-latin-ext-400-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-latin-ext-600-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-latin-ext-700-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-latin-ext-800-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-vietnamese-300-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-vietnamese-400-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-vietnamese-600-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-vietnamese-700-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fontsource\nunito\files\nunito-vietnamese-800-normal.woff2" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-brands-400.eot" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-brands-400.ttf" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-brands-400.woff" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-brands-400.woff2" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-regular-400.eot" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-regular-400.ttf" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-regular-400.woff" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-regular-400.woff2" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-solid-900.eot" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-solid-900.ttf" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-solid-900.woff" />
+    <Content Include="assets\fonts\vendor\%40fortawesome\fontawesome-free\webfa-solid-900.woff2" />
+    <Content Include="assets\fonts\vendor\%40icon\dripicons\dripicons.eot" />
+    <Content Include="assets\fonts\vendor\%40icon\dripicons\dripicons.ttf" />
+    <Content Include="assets\fonts\vendor\%40icon\dripicons\dripicons.woff" />
+    <Content Include="assets\fonts\vendor\bootstrap-icons\bootstrap-icons.woff" />
+    <Content Include="assets\fonts\vendor\bootstrap-icons\bootstrap-icons.woff2" />
+    <Content Include="assets\fonts\vendor\summernote\dist\summernote.eot" />
+    <Content Include="assets\fonts\vendor\summernote\dist\summernote.ttf" />
+    <Content Include="assets\fonts\vendor\summernote\dist\summernote.woff" />
+    <Content Include="assets\fonts\vendor\summernote\dist\summernote.woff2" />
+    <Content Include="assets\js\extensions\skins\ui\oxide-dark\fonts\tinymce-mobile.woff" />
+    <Content Include="assets\js\extensions\skins\ui\oxide\fonts\tinymce-mobile.woff" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ImagenesCT\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49800</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44398/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
